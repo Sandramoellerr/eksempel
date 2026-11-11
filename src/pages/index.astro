@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';	
 
-
+import "../styles/styles.css" 
 import  catimage1  from '../assets/cat1.png';
 import  catimage2  from '../assets/cat2.png';
 import  catimage3  from '../assets/cat3.png';
@@ -20,11 +20,12 @@ import Card from '../components/Cards.astro';
 		<title>eksempel</title>
 	</head>
 	<body>
+		<div class="øvelse">
 		<h1>Eksempel 1</h1>
 		<p>nu skal der læres</p>
 
 		<h2>her kommer der en paragraf</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis voluptates quasi ipsa provident iure asperiores numquam animi architecto explicabo illum, neque rem corrupti, nobis laboriosam fuga, autem ipsum non?</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis voluptates quasi ipsa provident iure asperiores numquam animi architecto explicabo illum, neque rem corrupti, nobis laboriosam fuga, autem ipsum non?</p></div>
 <section>
 	<h2>her er en section</h2>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis voluptates quasi ipsa provident iure asperiores numquam animi architecto explicabo illum, neque rem corrupti, nobis laboriosam fuga, autem ipsum non?</p>
@@ -34,6 +35,23 @@ import Card from '../components/Cards.astro';
 	
 	<Card img={catimage3} headline="her kommer en tredje kat" text="det er stadig en sød kat" />
 
+	<Card img={catimage1} headline="her kommer en fjerde kat" text="men den er slet ikke sød" />
+
 </section>
 	</body>
 </html>
+
+<style>
+	.øvelse {margin-left: 2rem;}
+  h1 {
+    color: #a83232;
+  }
+  h2 {
+    color: #7d1616;
+  }
+
+ 
+	
+
+ 
+</style>
