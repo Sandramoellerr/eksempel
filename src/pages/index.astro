@@ -1,5 +1,12 @@
 ---
-import Card from '../components/card.astro';
+import { Image } from 'astro:assets';	
+
+
+import  catimage1  from '../assets/cat1.png';
+import  catimage2  from '../assets/cat2.png';
+import  catimage3  from '../assets/cat3.png';
+
+import Card from '../components/Cards.astro';	
 ---
 
 
@@ -15,13 +22,18 @@ import Card from '../components/card.astro';
 	<body>
 		<h1>Eksempel 1</h1>
 		<p>nu skal der læres</p>
+
 		<h2>her kommer der en paragraf</h2>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis voluptates quasi ipsa provident iure asperiores numquam animi architecto explicabo illum, neque rem corrupti, nobis laboriosam fuga, autem ipsum non?</p>
 <section>
 	<h2>her er en section</h2>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis voluptates quasi ipsa provident iure asperiores numquam animi architecto explicabo illum, neque rem corrupti, nobis laboriosam fuga, autem ipsum non?</p>
-	<Card headline="her kommer en kat" text="det er en sød kat" />
-	<Card headline="her kommer endnu kat" text="det er også en sød kat" />
+	<Card img={catimage1} headline="her kommer en kat" text="det er en sød kat" />
+
+	<Card img={catimage2} headline="her kommer endnu kat" text="det er også en sød kat" />
+	
+	<Card img={catimage3} headline="her kommer en tredje kat" text="det er stadig en sød kat" />
+
 </section>
 	</body>
 </html>
